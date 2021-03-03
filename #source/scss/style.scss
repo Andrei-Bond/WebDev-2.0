@@ -1,0 +1,298 @@
+//<МИКСИНЫ>===============================================================================================
+@import "_mixins.scss";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+
+//</Подключаем шрифты>= ======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily: "Roboto";
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 1170;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "_null.scss";
+body {
+	color: #000;
+	font-size: 14px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	&.lock {
+		overflow: hidden;
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	&.loaded {
+	}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+//@import "forms.scss";
+//@import "ui.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "../../js/fancybox/jquery.fancybox.scss";
+//@import "datepicker.scss";
+//@import "fontawesome.scss";
+//@import "popover.min.scss";
+//@import "baguetteBox.scss";
+//@import "pagging.scss";
+//@import "icons.scss";
+//popup.scss";
+//header.scss";
+//footer.scss";
+//home.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+
+.mainPage {
+	background: url('../../img/bg-image.jpg') 50%/cover no-repeat;
+	min-height: 100vh;
+
+		&__header {
+			padding-top: 25px;
+		}
+		&__nav {
+			margin: auto;
+			padding: 0px 15px;
+			max-width: 583px;
+			max-height: 44px;
+			line-height: 44px;
+			@include flexbox();
+			justify-content: space-between;
+			font-size: 14px;
+			color: #ffffff;
+			cursor: pointer;
+			:visited {
+				color: #ffffff;
+			}
+			:hover {
+				text-decoration: underline;
+			}
+		}
+
+		&__content {
+			margin-top: 161px;
+			@media (max-width: $md2+px) {
+				margin-top: 100px;
+			}
+			@media (max-width: $md3+px) {
+				margin-top: 80px;
+			}
+			@media (max-width: $md4+px) {
+				margin-top: 40px;
+			}
+		}
+
+		&__title {
+			font-size: 64px;
+			font-weight: bold;
+			letter-spacing: 4.5px;
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFFFFF;
+			@media (max-width: $md3+px) {
+				font-size: 37px;
+			}
+		}
+
+		&__text {
+			margin: 20px auto 0px auto;
+			max-width: 470px;
+			font-size: 18px;
+			line-height: 140%;
+			text-align: center;
+			color: #FFFFFF;
+			@media (max-width: $md4+px) {
+				padding: 0px 10px;
+			}
+		}
+		&__footer {
+			margin-top: 160px;
+			@media (max-width: $md2+px) {
+				margin-top: 70px;
+			}
+			@media (max-width: $md3+px) {
+				margin-top: 50px;
+			}
+			@media (max-width: $md4+px) {
+				margin-top: 30px;
+			}
+			padding-bottom: 20px;
+		}
+
+		&__column {
+
+			max-width: 170px;
+			margin: auto;
+			@include flexbox();
+			justify-content: space-between;
+			height: 20px;
+			line-height: 20px;
+
+		}
+}
+.nav {
+
+		&__link {
+		}
+}
+.mailPage {
+
+		&__btn {
+			margin: 30px auto 0 auto;
+		}
+}
+.btn {
+		&_1 {
+			display: block;
+			max-width: 184px;
+			height: 46px;
+			background-color: #00AFDB;
+			text-align: center;
+			text-transform: uppercase;
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 46px;
+		}
+}
+.footer {
+		&__icon {
+			display: block;
+			align-content: center;
+			align-self: center;
+			width: 20px;
+			height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.f {
+		display: block;
+		width: 20px;
+		height: 20px;
+		border: 1.5px solid #ffffff;
+		border-radius: 20px;
+		img {
+			margin: 3.5px auto auto 5.5px;
+		}
+	}
+	.y {
+		display: block;
+		width: 20px;
+		height: 20px;
+		border: 1.5px solid #ffffff;
+		border-radius: 20px;
+		img {
+			margin: 4.5px auto auto 3.5px;
+		}
+	}
+	
+//====================================================================================================
+//page_2
+
+.page_2 {
+	min-height: 100vh;
+	@include flexbox();
+	justify-content: space-around;
+	background-color: #FFFFFF;
+	@media (max-width: $md3+px) {
+		flex-direction: column;
+	}
+
+	&__content {
+		max-width: 407px;
+		margin: 23% auto auto 12%;
+		@media (max-width: $md2+px) {
+			margin-top: 15%;
+		}
+
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #373737;
+		max-width: 380px;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 140%;	
+		color: #4E4E4E;
+		span {
+			font-weight: bold;
+		}
+		margin-bottom: 30px;
+	}
+}
+.pade_2 {
+	&__image {
+		margin: 10% 10%;
+		
+		img {
+			max-width: 407px;
+			@media (max-width: $md1+px) {
+				max-width: 330px;
+			}
+			@media (max-width: $md2+px) {
+				max-width: 280px;
+			}
+			@media (max-width: $md3+px) {
+				margin: auto;
+				max-width: 240px;
+			}
+		}
+	}
+}
+
+
+//</ОСНОВНОЙ БЛОК>================================================================================================
