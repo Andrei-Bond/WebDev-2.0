@@ -213,25 +213,25 @@ body.lock {
 }
 
 .mainPage__footer {
-  margin-top: 160px;
+  margin-top: 30vh;
   padding-bottom: 20px;
 }
 
 @media (max-width: 991.98px) {
   .mainPage__footer {
-    margin-top: 70px;
+    margin-top: 15.5vh;
   }
 }
 
 @media (max-width: 767.98px) {
   .mainPage__footer {
-    margin-top: 50px;
+    margin-top: 10.5vh;
   }
 }
 
 @media (max-width: 479.98px) {
   .mainPage__footer {
-    margin-top: 30px;
+    margin-top: 6.5vh;
   }
 }
 
