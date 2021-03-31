@@ -235,7 +235,7 @@ body {
 //====================================================================================================
 //page_2
 
-.page_2 {
+.page_x {
 	min-height: 100vh;
 	@include flexbox();
 	justify-content: space-around;
@@ -273,11 +273,9 @@ body {
 		}
 		margin-bottom: 30px;
 	}
-}
-.pade_2 {
+
 	&__image {
 		margin: 10% 10%;
-		
 		img {
 			max-width: 407px;
 			@media (max-width: $md1+px) {
@@ -293,6 +291,155 @@ body {
 		}
 	}
 }
+//====================================================================================================
+//community
 
+.community {
+	text-align: center;
+	background-color: #F5F6F7;
+	height: 504px; 
+
+	&__body {
+		//max-width: 1062px;
+		margin: 0 auto;
+		@include flexbox();
+		justify-content: space-between;
+	}
+
+	&__content {
+		@include flexbox();
+		flex-direction: column;
+		margin-top: 155px;
+		flex-basis: 49%;
+		flex-shrink:0;
+		max-width: 298px;
+		
+		margin: 155px auto auto 12%;
+		@media (max-width: $md2+px) {
+		margin-top: 15%;
+		}
+	} 
+
+	&__logo {
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+
+	&__text {
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	&__slider {
+		margin-top: 82px;
+		margin-right: -395px;
+		flex-basis: 49%;
+		flex-grow: 0;
+		flex-shrink: 0;
+
+		&__but {
+			position: relative;
+			margin: 0 auto;
+			width: 83px;
+			height: 18px;
+			margin-bottom: 23px;
+			&__num {
+				font-size: 18px;
+			}
+		}
+		&__but::before {
+			content: '';
+			background-image: url(..//..//img/icons/arrow-left.svg);
+			width: 10px;
+			height: 15px;
+			margin: 3px auto auto -40px;
+			position: absolute;
+		}
+		&__but::after {
+			content: '';
+			background-image: url(..//..//img/icons/arrow-right.svg);
+			width: 10px;
+			height: 15px;
+			margin: -15px auto auto 34px;
+			position: absolute;
+		}
+		&__picture {
+			display: grid;
+			grid-template: repeat(1,244px) / repeat(3,1fr);
+			justify-content: space-between;
+			margin: 0 -15px 0 -15px;
+
+		}
+		&__item {
+			position: relative;
+			width: 407px;
+			height: 244px;
+			margin: 0 15px;
+			img {
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+}
+//<page4>=======================================
+.page_4_content {
+	order: 2;
+	margin-left: 4%;
+}
+.page_4_image {
+	order: 1;
+	margin-left: 12%;
+}
+
+//<email>=======================================
+.email {
+
+	&__container {
+		height: 524px;
+		background: url('..//img/pexels-christina-morillo-1181675\ 1.jpg') 50%/cover no-repeat;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #FFFFFF;
+		padding-top: 200px;
+		margin-bottom: 30px;
+	}
+
+	&__form {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__input {
+		input {
+			width: 306px;
+			height: 46px;
+			font-size: 20px;
+		}
+	}
+	&__but {
+		button {  
+			width: 66px;
+			height: 46px;
+			background-color: #00AFDB;
+		}
+
+
+
+	}
+}
 
 //</ОСНОВНОЙ БЛОК>================================================================================================
