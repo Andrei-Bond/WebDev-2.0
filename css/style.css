@@ -429,11 +429,16 @@ body.lock {
   }
 }
 
+.community__logo {
+  margin-bottom: 20px;
+}
+
 .community__title {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .community__text {
@@ -479,8 +484,7 @@ body.lock {
 
 @media (max-width: 767.98px) {
   .community__slider__but {
-    margin-left: 50vw;
-    left: -50px;
+    margin-left: 43vw;
   }
 }
 
@@ -524,6 +528,12 @@ body.lock {
   margin-left: 12%;
 }
 
+@media (max-width: 767.98px) {
+  .page_4_image {
+    margin-top: 150px;
+  }
+}
+
 .email {
   margin-top: 20px;
 }
@@ -542,6 +552,12 @@ body.lock {
   color: #FFFFFF;
   padding-top: 200px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .email__title {
+    padding: 200px 15px 0px 15px;
+  }
 }
 
 .email__form {

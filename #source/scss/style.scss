@@ -340,6 +340,7 @@ body {
 	} 
 
 	&__logo {
+		margin-bottom: 20px;
 	}
 
 	&__title {
@@ -347,6 +348,7 @@ body {
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 20px;
+		margin-bottom: 10px;
 	}
 	
 
@@ -381,8 +383,8 @@ body {
 				margin-left: 12%;
 			}
 			@media (max-width: $md3+px) {
-				margin-left: 50vw;
-				left: -50px; 
+				margin-left: 43vw;
+				
 				}
 			&__num {
 				font-size: 18px;
@@ -420,6 +422,9 @@ body {
 .page_4_image {
 	order: 1;
 	margin-left: 12%;
+	@media (max-width: $md3+px) {
+		margin-top: 150px;
+	}
 }
 
 //<email>=======================================
@@ -440,6 +445,9 @@ body {
 		color: #FFFFFF;
 		padding-top: 200px;
 		margin-bottom: 30px;
+		@media (max-width: $md3+px) {
+			padding: 200px 15px 0px 15px;
+			}
 	}
 
 	&__form {
