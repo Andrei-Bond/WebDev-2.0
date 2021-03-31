@@ -263,6 +263,10 @@ body.lock {
   line-height: 46px;
 }
 
+.btn_1:hover {
+  background-color: #009CC2;
+}
+
 .footer__icon {
   display: block;
   align-content: center;
@@ -446,10 +450,19 @@ body.lock {
 }
 
 .community__slider__but {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   margin: auto auto 23px 45%;
   width: 83px;
   height: 18px;
+}
+
+.community__slider__but a {
+  margin-top: 3px;
+}
+
+.community__slider__but a:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 1170px) {
@@ -473,24 +486,7 @@ body.lock {
 
 .community__slider__but__num {
   font-size: 18px;
-}
-
-.community__slider__but::before {
-  content: '';
-  background: url(..//..//img/icons/arrow-left.svg) 50%/cover no-repeat;
-  width: 10px;
-  height: 15px;
-  margin: 3px auto auto -40px;
-  position: absolute;
-}
-
-.community__slider__but::after {
-  content: '';
-  background: url(..//..//img/icons/arrow-right.svg) 50%/cover no-repeat;
-  width: 10px;
-  height: 15px;
-  margin: -15px auto auto 34px;
-  position: absolute;
+  letter-spacing: 5px;
 }
 
 .community__slider__picture {
@@ -579,6 +575,10 @@ body.lock {
   background-color: #00AFDB;
 }
 
+.email__but button:hover {
+  background-color: #009CC2;
+}
+
 @media (max-width: 479.98px) {
   .email__but button {
     padding-left: 240px;
@@ -660,6 +660,10 @@ body.lock {
   font-weight: 700;
   line-height: 46px;
   color: #ffffff;
+}
+
+.btn_2 p:hover {
+  background-color: #009CC2;
 }
 
 .btn_2 img {

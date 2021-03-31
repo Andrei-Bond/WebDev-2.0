@@ -198,6 +198,9 @@ body {
 			font-weight: bold;
 			font-size: 14px;
 			line-height: 46px;
+			&:hover {
+				background-color: #009CC2;
+			}
 		}
 }
 .footer {
@@ -360,10 +363,17 @@ body {
 		flex-shrink: 0;
 
 		&__but {
-			position: relative;
+			display: flex;
+			justify-content: space-between;
 			margin: auto auto 23px 45%;
 			width: 83px;
 			height: 18px;
+			a {
+				margin-top: 3px;
+				&:hover {
+					opacity: 0.5;
+				}
+			}
 			@media (max-width: $mw+px) {
 				margin-left: 30%;
 			}
@@ -376,24 +386,10 @@ body {
 				}
 			&__num {
 				font-size: 18px;
+				letter-spacing: 5px;
 			}
 		}
-		&__but::before {
-			content: '';
-			background: url(..//..//img/icons/arrow-left.svg) 50%/cover no-repeat;
-			width: 10px;
-			height: 15px;
-			margin: 3px auto auto -40px;
-			position: absolute;
-		}
-		&__but::after {
-			content: '';
-			background: url(..//..//img/icons/arrow-right.svg) 50%/cover no-repeat;
-			width: 10px;
-			height: 15px;
-			margin: -15px auto auto 34px;
-			position: absolute;
-		}
+
 		&__picture {
 			display: grid;
 			grid-template: repeat(1,244px) / repeat(3,1fr);
@@ -471,6 +467,9 @@ body {
 			width: 66px;
 			height: 46px;
 			background-color: #00AFDB;
+			&:hover {
+				background-color: #009CC2;
+			}
 			@media (max-width: $md4+px) {
 				padding-left: 240px;
 				&::before {
@@ -554,6 +553,9 @@ body {
 			font-weight: 700;
 			line-height: 46px;
 			color: #ffffff;
+			&:hover {
+				background-color: #009CC2;
+			}
 		}
 		img {
 			width: 59px;
