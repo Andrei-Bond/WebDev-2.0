@@ -442,4 +442,137 @@ body {
 	}
 }
 
+
+//<download>=======================================
+
+.download {
+	height: 464px;
+	background-color: #f5f6f7;
+
+	&__title {
+		color: #373737;
+		font-size: 24px;
+		letter-spacing: 1px;
+		font-weight: 700;
+		text-align: center;
+		line-height: 28px;
+		text-transform: uppercase;
+		padding-top: 120px;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		margin: 0 auto;
+		max-width: 480px;
+		text-align: center;
+		color: #4e4e4e;
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+
+	&__but {
+		display: flex;
+		justify-content: center;
+		margin: auto -23px;
+	}
+
+	&__apple {
+		margin: auto 23px;
+	}
+
+	&__google {
+		margin: auto 23px;
+	}
+}
+.container {
+}
+.btn {
+
+	&_2 {
+		display: flex;
+		p {
+			width: 127px;
+			height: 46px;
+			background-color: #00AFDB;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 46px;
+			color: #ffffff;
+		}
+		img {
+			width: 59px;
+			height: 46px;
+			padding: 12px 20px;
+			background-color: #009CC2;
+		}
+	}
+}
+
+
+//<footer>=======================================
+
+.footer {
+	height: 185px;
+	background-color: #000000;
+
+	&__items {
+		padding-top: 60px;
+		display: flex;
+		justify-content: space-between;
+	
+	}
+
+	&__links {
+		display: flex;
+		flex-basis: 33.333%;
+		flex-grow:0;
+		position: relative;
+	}
+	&__links::before {
+		content: '';
+		position: absolute;
+		width: 1px;
+		height: 8px;
+		background-color: #4E4E4E;
+		left: 62px;
+		top: 20px;
+	}
+	&__links::after {
+		content: '';
+		position: absolute;
+		width: 1px;
+		height: 8px;
+		background-color: #4E4E4E;
+		left: 147px;
+		top: 20px;
+	}
+
+	&__link {
+		color: #FFFFFF;
+		line-height: 44px;
+		margin-right: 40px;
+		&:hover {
+			color: green;
+			text-decoration: underline;
+		}
+	}
+	&__logo {
+		flex-basis: 33.333%;
+		flex-grow:0;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	&__license {
+		color: #818181;
+		line-height: 44px;
+		flex-basis: 33.333%;
+		flex-grow:0;
+		text-align: right;
+	}
+}
+
+
 //</ОСНОВНОЙ БЛОК>================================================================================================
